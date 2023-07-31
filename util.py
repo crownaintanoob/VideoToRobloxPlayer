@@ -33,7 +33,7 @@ def GetPixelFromVideo(pathVideo, ResizeSizeX=80, ResizeSizeY=80):
             break
         frame_resized = cv2.resize(image, (ResizeSizeX, ResizeSizeY))
         frame_resized = cv2.cvtColor(frame_resized, cv2.COLOR_BGR2RGB) # Fix blue colors
-        # flip the image by vertically
+        # flip the image vertically
         frame_resized = cv2.flip(frame_resized, 0)
         count += 1
     cap.release()
