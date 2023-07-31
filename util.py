@@ -37,5 +37,4 @@ def GetPixelFromVideo(pathVideo, ResizeSizeX=80, ResizeSizeY=80):
         frame_resized = cv2.flip(frame_resized, 0)
         count += 1
     cap.release()
-    cv2.destroyAllWindows()
     return ListOfPixelsForFrames
